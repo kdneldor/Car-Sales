@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { Provider } from "react-redux";
 import { createStore } from "redux";
+import { Provider } from "react-redux";
+import carReducer from "./reducers/carReducer";
 
 import "bulma/css/bulma.css";
 import "./styles.scss";
-import {Reducer} from "./reducers/Reducer"
 
-// Step 1: create Redux store
-const store = createStore(Reducer);
+const store = createStore(carReducer);
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
