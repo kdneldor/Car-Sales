@@ -23,6 +23,14 @@ const App = () => {
     ]
   };
 
+  const removeFeature = item => {
+
+  }
+
+  const buyItem = item => {
+    
+  }
+
   return (
     <div className="boxes">
       <div className="box">
