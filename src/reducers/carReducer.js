@@ -1,7 +1,7 @@
 export const ADD_FEATURE = "ADD_FEATURE";
 export const REMOVE_FEATURE = "REMOVE_FEATURE";
 
-const initialState = {
+export const initialState = {
   additionalPrice: 0,
   car: {
     price: 26395,
@@ -19,7 +19,7 @@ const initialState = {
 };
 
 //
-const carReducer = (state = initialState, action) => {
+export const carReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_FEATURE:
       //action.payload = feature object
